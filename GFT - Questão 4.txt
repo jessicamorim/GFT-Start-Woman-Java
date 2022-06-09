@@ -1,0 +1,45 @@
+4 - Class MenuDeOpcoes{
+
+import java.util.Scanner;
+
+ public static void main(String[] args){
+ 
+ Scanner scan = new Scanner(System.in);
+	// era para ter sido feito com switch/case
+	do{
+	System.out.printlln(" 1 - Média Aritmética ");
+	System.out.printlln(" 2 - Média Aritmética ");
+	System.out.printlln(" 3 - Sair: ");
+	double opcao = scan.nextDouble();
+		if(opcao < 0 || opcao > 4)
+		System.out.println("Opcao inválida);
+	}while(opcao < 0 || opcao > 4)
+	
+ if(opcao == 1){
+	System.out.printlln("Informe o primeira nota: ");
+	double nota1 = scan.nextDouble();
+	System.out.printlln("Informe a segunda nota: ");
+	double nota2 = scan.nextDouble();
+ 
+	double mediaAritmetica = (nota1 + nota2) / 2;
+	
+	System.out.printlln("A média aritmetica é: " + mediaAritmetica);
+ 
+ }else if(opcao == 2){
+	System.out.printlln("Informe o primeira nota: ");
+	double nota1 = scan.nextDouble();
+	System.out.printlln("Informe a segunda nota: ");
+	double nota2 = scan.nextDouble();
+	System.out.printlln("Informe a terceira nota: ");
+	double nota3 = scan.nextDouble();
+	
+	double mediaPonderada = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 3;
+	
+	System.out.printlln("A média ponderada é: " + mediaPonderada);
+ }else if(opcao == 3){
+	System.exit(0);
+}
+}
+
+ 
+ 
