@@ -1,0 +1,34 @@
+2 - Class FormulaDeBhaskara{
+
+import java.util.Scanner;
+ 
+public static void main(String[] args){
+ 
+ Scanner scan = new Scanner(System.in);
+ 
+  System.out.printlln("Informe o valor de A ");
+  double valorA = scan.nextDouble();
+ 
+  System.out.printlln("Informe o valor de B ");
+  double valorB = scan.nextDouble();
+ 
+  System.out.printlln("Informe o valor de C ");
+  double valorC = scan.nextDouble();
+ 
+   if(valorA == 0){
+    System.out.printlln("A equação não é do segundo      grau ");
+    System.ext(0);
+   }
+ 
+  double delta = math.pow(valorB, 2) - (4 * valorA * valorC);
+
+   if(delta < 0){
+    System.out.printlln("A equação não possui raízes reais ");
+   }else if if(delta == 0){
+    System.out.printlln("A equação possui apenas uma   raíz real ");
+   }else if if(delta > 0){
+ double x1 = (-valorB + delta) * (2 * valorA);
+ double x2 = (-valorB + delta) * (2 * valorA);
+ 	System.out.printlln("A equação possui apenas uma raíz real " + x1 + x2);
+}
+}
