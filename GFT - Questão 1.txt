@@ -1,0 +1,33 @@
+1 - public class Anagrama{
+ 
+ import java.util.Arrays;
+ 
+ public static void main(String[] args){
+ 
+ public static boolean Anagrama(String palavra1, string palavra2){
+ 
+ if (palavra1 == null || palavra2 == null)
+ return false;
+ if (palavra1.length() != palavra2.length())
+ return false;
+ 
+ palavra1 = palavra1.toLowCase();
+ palavra2 = palavra2.toLowCase();
+ 
+ char[] tempString1 = palavra1.toCharArray();
+ char[] tempString2 = palavra2.toCharArray();
+ 
+ Arrays.sort(tempString1);
+ Arrays.sort(tempString2);
+ 
+	System.out.println(Arrays.toString(tempString1));
+	System.out.println(Arrays.toString(tempString2));
+ 
+  return Arrays.equals(tempString1, tempString2);
+  
+   public static void main(String[] args){
+   
+   System.out.printlln("O anagrama é: " + Anagrama(padre, perda));
+   
+   }
+ }
