@@ -1,0 +1,150 @@
+3 - public class Mensagem{
+
+private String texto;
+private Reacoes reacoes;
+
+public String getTexto(){
+	return texto
+}
+
+public void setTexto(String texto){
+	this.texto = texto
+}
+
+public Reacoes getReacoes(){
+	return reacoes;
+}
+
+public void setReacoes(String reacoes){
+	this.reacoes = reacoes;i
+}
+}
+
+public class Reacoes{
+ 
+ private String curtir; 
+ private String Coracao;
+ private String Gargalhada;
+ private String Surpreso;
+ private String Triste;
+ private String Bravo;
+ 
+ 
+ public String getCurtir(){
+	return curtir;
+}
+
+public void setCurtir(String Curtir){
+	this.curtir = curtir
+}
+
+public String getCoracao(){
+	return coracao;
+}
+
+public void setCoracao(String Coracao){
+	this.coracao = Coracao;
+}
+
+public String getGargalhada(){
+	return gargalhada;
+}
+
+public void setGargalhada(String Gargalhada){
+	this.Gargalhada = Gargalhada;
+}
+
+public String getSurpreso(){
+	return surpreso;
+}
+
+public void setSurpreso(String Surpreso){
+	this.Surpreso = Surpreso;
+}
+
+public String getTriste(){
+	return triste;
+}
+
+public void setTriste(String Triste){
+	this.triste = Triste;
+}
+
+public String getBravo(){
+	return bravo;
+}
+
+public void setBravo ((String Bravo)){
+	this.bravo = bravo;
+}
+}
+ 
+ 
+public class MensagemImagem extends Mensagem{
+	private String imagem;
+	
+	System.out.printlln("Imagem da pessoa: + imagem ");
+	
+	public String getImagem(){
+	return imagem;
+}
+
+public void setImagem(String Imagem){
+	this.Imagem = Imagem;
+}
+}
+
+public class MensagemVideo extends Mensagem{
+	private String video;
+	
+	System.out.printlln("Imagem da pessoa: + video ");
+	
+	public String getVideo){
+	return video;
+}
+
+public void setVideo(String video){
+	this.video = video;
+}
+}
+
+
+public class Usuario{
+
+	private String nome;
+	
+	 public String getNome(){
+	return nome;
+}
+
+public void setNome(String Nome){
+	this.nome = nome;
+}
+}	
+	
+	public class Chat{
+	
+	public static void main(String[] args){
+	
+	Usuario usuario1 = new Usuario();
+	usuario1.setNome("José");
+	usuario1.setTexto("Olá")
+	usuario1.setImagem();
+	usuario1.setVideo()
+	
+	Usuario usuario2 = new Usuario();
+	usuario2.setNome("João");
+	usuario2.setTexto("Como vai")
+	usuario2.setImagem();
+	usuario2.setVideo()
+	
+	Usuario usuario3 = new Usuario();
+	usuario3.setNome("Jorge");
+	usuario3.setTexto("Tudo bem")
+	usuario3.setImagem();
+	usuario3.setVideo()
+}
+} 
+
+ 
+
